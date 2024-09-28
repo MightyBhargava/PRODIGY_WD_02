@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+}
+
+h1 {
+    margin: 10px 0 0 20px;
+    user-select: none;
+}
+
+.container {
+    background: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.time {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    user-select: none;
+    text-align: center; /* Center the time */
+    width: 100%; /* Make it responsive */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.controls button {
+    background-color: lightblue;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.lapping {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the laps */
+}
+
+.lapping h4 {
+    margin: 5px 0; /* Add some space between laps */
+    text-align: center; /* Center lap text */
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        max-width: 90%; /* Make it responsive */
+        padding: 10px;
+    }
+    .time {
+        font-size: 3rem; /* Adjust size for smaller screens */
+    }
+    .controls button {
+        padding: 7px;
+        margin: 5px;
+    }
+}
